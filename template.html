@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>{{ instrument }} - {{ fanfare }}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            display: block;
+            font-size: 18pt;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .pupitres {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .pupitres li {
+            list-style: none;
+            background: #eee;
+            border-radius: 100px;
+            padding: 7px 10px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .song h2 {
+            font-size: 14pt;
+            display: block;
+            border-top: 1px solid #eee;
+            padding: 20px;
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+            text-decoration:none;
+        }
+
+        .song .panel {
+            display:none;
+
+        }
+
+        .song:target > .panel {
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        .song .panel .part {
+            display:flex;
+            flex-direction: column;
+            margin: 20px;
+
+        }
+
+        .song .panel .part .label {
+            padding: 10px;
+            color: #fff;
+            background: #222;
+            font-size: 10pt;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .song .panel .clip-image {
+            width: 400px;
+        }
+
+        .song .panel .clip-file {
+            width: 400px;
+            height: 225px;
+            background: #eee;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .song .panel .clip-file a {
+            font-size: 16pt;
+            color: #666;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header .pupitres {
+                margin: 0 10px 20px 10px;
+            }
+
+            .song .panel .part video {
+                width: 100% !important;
+            }
+
+            .song .panel .clip-image {
+                width: 100% !important;
+            }
+
+            .song .panel .clip-file {
+                width: 100% !important;
+                height: 56vw;
+            }
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title" ><a href="#" >Répertoire Loco</a></h1>
+        <ul class="pupitres" >
+             {% for pupitre in pupitres %}
+             <li>
+                <input type="checkbox" name="pupitre" onclick="check(this)" id="{{ pupitre }}" value="{{ pupitre }}" />
+                <label>{{ pupitre }}</label>
+             </li>
+             {% endfor %}
+        </ul>
+    </header>
+    {% for morceau in morceaux %}
+        <div id="{{ morceau.id }}" class="song" >
+            <h2><a href="#{{ morceau.id}}" >{{ morceau.nom }}</a></h2>
+            <div class="panel" >
+                {% for partie in morceau.parties %}
+                    <div class="part part-{{ partie.pupitre}}" >
+                        {% if partie.clip.type == "video" %}
+                        <video src="{{ partie.clip.content }}" controls width="400" ></video>
+                        {% elif partie.clip.type == "image" %}
+                        <a href="{{ partie.clip.content }}" ><img class="clip-image" src="{{ partie.clip.content }}" /></a>
+                        {% elif partie.clip.type == "fichier" %}
+                        <div class="clip-file" >
+                            <a href="{{ partie.clip.content }}" >📎 Fichier joint</a>
+                        </div>
+                        {% endif %}
+                        <span class="label" >{{ partie.nom }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    <script>
+
+        var showPupitre = (id, show) => {
+            var elmnts = document.getElementsByClassName(`part-${id}`);
+            for (var i = 0; i < elmnts.length; ++i) {
+                var e = elmnts[i];
+                if (show)  e.style.display = '';
+                else e.style.display = 'none';
+            }
+        }
+
+        var check = (self) => {
+            var checks = Array.from(document.getElementsByName("pupitre"));
+            var allUncheked = true;
+            var sumup = checks.map((v, i) => {
+                if (v.checked) allUncheked = false;
+                return {
+                    "id": v.id,
+                    "checked": v.checked
+                }
+            })
+
+            if (allUncheked) {
+                sumup.forEach(e => showPupitre(e.id, true));
+            } else {
+                sumup.forEach(e => showPupitre(e.id, e.checked));
+            }
+        }
+    </script>
+</body>
+</html>

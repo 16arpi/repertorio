@@ -1,0 +1,533 @@
+{
+    "instrument": "Trombone",
+    "fanfare": "La Locomotive",
+    "pupitres": [
+        "trompette",
+        "trombone",
+        "bois",
+        "percussions",
+        "basse"
+    ],
+    "morceaux": [
+        {
+            "nom": "24000 baci",
+            "id": "24000",
+            "parties": [
+                {
+                    "nom": "Intro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/24000/intro.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 1 + pont",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/24000/th1-pont.mp4"
+                    }
+                },
+                {
+                    "nom": "Fond + pont",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/24000/fond-pont.mp4"
+                    }
+                },
+                {
+                    "nom": "Outro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/24000/outro.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Africa",
+            "id": "africa",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/africa/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/africa/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Appel de fin",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/africa/appel-fin.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Cachita",
+            "id": "cachita",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/cachita/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Réponses theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/cachita/th1-reponse.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/cachita/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Pompes solo",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/cachita/pompes-solo.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Carinito",
+            "id": "carinito",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/carinito/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Pont",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/carinito/pont.mp4"
+                    }
+                },
+                {
+                    "nom": "Refrain",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/carinito/refrain.mp4"
+                    }
+                },
+                {
+                    "nom": "Outro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/carinito/outro.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Chan Chan",
+            "id": "chanchan",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/chanchan/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/chanchan/th2.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Do Watcha Wanna",
+            "id": "dowatcha",
+            "parties": [
+                {
+                    "nom": "Intro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/dowatcha/intro.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/dowatcha/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/dowatcha/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 3",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/dowatcha/th3.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Loco got fire",
+            "id": "locogotfire",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/locogotfire/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/locogotfire/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Backs solo",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/locogotfire/backs-solo.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Joe Avery's Blues",
+            "id": "secondline",
+            "parties": [
+                {
+                    "nom": "Appel",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/secondline/appel.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 1 + 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/secondline/th1-2.mp4"
+                    }
+                },
+                {
+                    "nom": "Pompes",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/secondline/pompes.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Misirlou",
+            "id": "misirlou",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/misirlou/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/misirlou/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Pompes",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/misirlou/pompes.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Montserrat",
+            "id": "montserrat",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/montserrat/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/montserrat/th2.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Oye Como Va",
+            "id": "oye",
+            "parties": [
+                {
+                    "nom": "Pompes intro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/oye/intro.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/oye/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Interlude",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/oye/interlude.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/oye/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 3",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/oye/th3.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Quien Sera",
+            "id": "quiensera",
+            "parties": [
+                {
+                    "nom": "Intro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/quiensera/intro.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/quiensera/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Backs theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/quiensera/th1-backs.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/quiensera/th2.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Samba",
+            "id": "samba",
+            "parties": [
+                {
+                    "nom": "Intro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/samba/intro.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/samba/theme.mp4"
+                    }
+                },
+                {
+                    "nom": "Pompe techno",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/samba/pompes-techno.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "St Louis Blues",
+            "id": "stlouis",
+            "parties": [
+                {
+                    "nom": "Intro blues",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/stlouis/intro-blues.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/stlouis/theme.mp4"
+                    }
+                },
+                {
+                    "nom": "Fond",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/stlouis/fond.mp4"
+                    }
+                },
+                {
+                    "nom": "Outro",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/stlouis/outro.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "We Come To Party",
+            "id": "wecome",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/wecome/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/wecome/th2.mp4"
+                    }
+                }
+            ]
+        },
+        {
+            "nom": "Ya Rayah",
+            "id": "yarajah",
+            "parties": [
+                {
+                    "nom": "Theme 1",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/yarajah/th1.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 2",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/yarajah/th2.mp4"
+                    }
+                },
+                {
+                    "nom": "Theme 3",
+                    "pupitre": "trombone",
+                    "clip": {
+                        "type": "video",
+                        "content": "./videos/yarajah/th3.mp4"
+                    }
+                }
+            ]
+        }
+    ]
+}
